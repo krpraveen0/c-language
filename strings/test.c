@@ -9,6 +9,4 @@ void main(){
     //display the output (names)
     printf(" The entered name is : %s",stu_name);
 
-
-
 }
