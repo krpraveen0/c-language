@@ -5,3 +5,17 @@ let us consider str1 and str2 are strings, so a program containing those two str
     2.) we cannot compare for collating sequence ie s1<s2,s1>s2, s1>=s2 etc.
     3.) We cannot concatenate them to form a single longer string ie str1 + str2.
 
+C language has a set of functions which are defined in <stdio.h> library which provide support for above operations
+Here some of the useful functions defined in <stdio.h> are as follows:
+1) strlen() :
+    It returns the length of a string, specified as the number of characters in the string but 
+    excluding the null character(\0).
+    It the string is empty then it is going to return 0.
+
+2)String Copy function:
+    C has two string copy functions. 
+        a.) strcpy() --> It copies the contents of one string to another. It copies the null character as well
+        b.) strncpy() --> It also copies the contents of one string to another but it sets maximum number   
+                          ofo characters that can be moved.
+
+3)
