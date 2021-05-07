@@ -1,0 +1,7 @@
+In C language string is not standard data type.
+We cannot use it directly with most of C operators.
+let us consider str1 and str2 are strings, so a program containing those two strings
+    1.) we cannot assign one string to another string ie ( we cannot do str1 = str2).
+    2.) we cannot compare for collating sequence ie s1<s2,s1>s2, s1>=s2 etc.
+    3.) We cannot concatenate them to form a single longer string ie str1 + str2.
+

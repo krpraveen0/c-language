@@ -1,0 +1,22 @@
+Single Character library Functions
+--------------------------------
+C has Character library Functions which are extermely useful for testing and transforming charcters.
+
+Some of the important function in character library of C language are:
+
+function  -------------------------------> Description
+1) ialnum(c) ---------------------------> It returns a non-zero if c is alphabetic or numeric.
+2) isalpha(c)-----------------------------> It returns a non-zero if c is alphabetic.
+3) scntrl(c)------------------------------> It returns a non-zero if c is a control character.
+4) isdigit(c)-----------------------------> It returns non-zero if c is a digit (0-9).
+5) isgraph(c)-----------------------------> IT returns a non-zero if c is non-blank but printing charcter.
+6) islower(c)-----------------------------> It return a non-zero if c is a lower alphabetic character ie a- z.
+7) isprint(c)-----------------------------> IT returns a non-zero if c is printable non-blank and white space included.
+8) ispunct(c) ----------------------------> It returns a non-zero if c is  a printable character other than aplha, numeric or blank.
+9) isspace(c)-----------------------------> It returns a non-zero for blanks and escape sequence character("\f", "\n", "\r", "\t", and "\v");
+10) isupper(c)----------------------------> It returns a non-zero if c is in capitals .
+11) isxdigit(c)---------------------------> it returns a non-zero if c is in hexadecimal character ( 0-9, (A-F))
+12) tolower(c)----------------------------> It returns the lowercase version of c .
+13) toupper(c)----------------------------> It returns the uppercase version of c .
+
+
