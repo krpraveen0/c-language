@@ -18,4 +18,14 @@ Here some of the useful functions defined in <stdio.h> are as follows:
         b.) strncpy() --> It also copies the contents of one string to another but it sets maximum number   
                           ofo characters that can be moved.
 
-3)
+3)strrev() - String Reverse:
+-----------------------------
+    It is used to reverse the given string & the reversed string will be placed at the same location.
+
+4)String Comparison:
+------------------------------
+C language has two string compare function:
+    1) strcmp() -> It compares two strings until unequal characters are found or until the end of the strings is reached.
+    2) strncmp() --> It compares untill unequal character are found, a specified number of characters have been tested, or
+                    until end of the string is reached.
+
