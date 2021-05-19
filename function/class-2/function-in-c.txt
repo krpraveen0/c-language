@@ -1,0 +1,66 @@
+The idea of top-down design in C language is done by using functions.
+A c program is made up of one or more functions, in which atmost one  must be named with main.
+The execution of program always starts and ends with main function only, but inside this main function
+we can also call some other functions to do special tasks.
+
+For example writing a calculator program
+
+---------------------------------------------
+calculator.C
+---------------------------------------------
+#include<stdio.h>
+
+void main(){
+    //call addition
+    add();/adds two number
+    //calling subtraction
+    sub();//subtracts two numbers.
+    //calling multiplication
+    mult();//multiplies two numbers.
+
+}
+//defining addition function
+add(){
+ int num1, num2, sum;
+ sum = num1 + num2;
+ return sum;
+}
+
+//defining subtraction function
+sub(){
+
+}
+
+//defining multiplication function
+mult(){
+
+}
+
+A function in c language (including main) is an independent module that will be called to do a specific task.
+
+Note:
+A called function always receives control from the calling function.
+When the called function completes its task, it returns control back to the calling function.
+It may or may not return a value to the caller function.
+The main function is called by the operating system, and main inturn calls the all other functions.
+When the main function is completed then it returns control to the operating system.
+
+
+Why to use function ?
+
+Different advantages to use the function in c programming language.
+1) By the use of function we can distribute the problems into uderstandable and manageable steps.
+2) function avoid repeating the code in program. Once we define a function then we pack a group of code with a 
+special name (function name) which allows the code to be executed from several locations in a program simply
+by calling that function name at different places of need.
+3) function provides code resusability.
+4) Function can be used to protect the data. ie the data defined inside the function is available only if it 
+is being executed (called).
+5) A big project in c can be divided in different function which can be developed by the different developers
+in this we can divide the workload of the large project also.
+
+C language has two types of functions
+1. Library functions (eg: printf(), scanf(), puts(), gets(), etc)
+2. user defined functions(add(), subt(), mult() etc)
+
+

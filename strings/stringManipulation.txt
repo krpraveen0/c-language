@@ -29,3 +29,12 @@ C language has two string compare function:
     2) strncmp() --> It compares untill unequal character are found, a specified number of characters have been tested, or
                     until end of the string is reached.
 
+
+5)String Concatenate Functions:
+    1) strcat()
+    2) strncat()
+
+6) strupr() - String Upper
+7) strlwr() - String Lower
+
+
