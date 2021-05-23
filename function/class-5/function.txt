@@ -1,0 +1,62 @@
+Function Definition:
+--------------------
+The collection of program statements(code) in C that describes the specific task done by the function 
+is called function Definition.
+It consists the codes for a function name.
+The function Definition creates the actual function memory.
+
+Syntax:
+        Return-type function-name(Formal-Parameters List){
+            Local variables decalarations;
+            statements;
+            return (express);
+        }
+
+Example:
+        int add(int x, int y){
+            int z;
+            z = x + y;
+            return z;
+        }
+
+A function Definition consists of two parts 
+    1. Function Header.
+    2. Function Body.
+
+1.Function Header:
+-----------------------
+The function header consists of three parts 
+    i) the return type.
+    ii) the function name.
+    iii) the formal Parameters list.
+
+NOte :
+return-type specifies the type of data that the function is expected to return to its calling function.
+In the absence of any data type, the type int is assumed by default by c compiler.
+If we don't want to return any value from our function then we must use void type with our function header .
+
+return-type is followed by the function name.
+function name can be any valid c identifier.
+the parameters to the function are contained in the formal paramter list.
+The formal-parameter list is contained inside the paranthesis followed by the function name.
+The formal-parameter list define and declares the variables that will contain the data received by the function.
+This parameter list is always required.
+If the function has no parameters which means it doesn't receives any data from the calling function then 
+we can leave the parameter list empty or declared with keyword void.
+If we are passing more than one paramters in the formal-parameter list then each variable should declared and defined
+clearly separated with a commas.
+
+
+
+Function Body :
+----------------
+the function body contains the local declarations and the function statements to perform some specific tasks
+enclosed with in pair of curly braces.
+Note: 
+The function body starts with the local Definition that specify the variables needed by the function.
+After the local definition the function statements, terminating with the return statement is coded.
+If function return type is void , it can be written without a return statement.
+It is strongly reccomended that the every function, even a void function should have a return statement.
+
+
+

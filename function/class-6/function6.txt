@@ -1,0 +1,126 @@
+local variable:
+--------------------
+It is a variable that is defined withing a function and used without having any role in the
+communication between the  function.
+
+int first(){
+    //local variable
+    int num1;
+
+}
+
+//another function
+int second(){
+    //local variable
+    int num2;
+    int num1;
+}
+
+Formal and Actual Parameter:
+--------------------------------
+Formal parameter:
+These are variables declared in the header of the function definition
+example:
+int add(int a, int b){
+    return a+b;
+}
+
+Where a & b are formal parameters expecting the actual values
+Actual Parameters:
+Those are the expressions in the calling statement.
+example:
+add(5,6)
+
+Where 5,6 are actual parameters which will taking the place of formal parameter.
+
+Function Calling:
+--------------------
+Function calling means passing the program control to the place where the function has been defined.
+Once the defined function completes its task it again returns the control to the calling statement of the 
+program with a single return value.
+
+note: if a called function is of void type then it will not return any value, it transfers the control
+of the program only .
+
+Whenever we need information to be passed to the function then it can be done via identifiers or expressions
+known as arguments or actual parameter and returned via the return statement.
+
+There are certain rules for parameters which must be keep in mind while writing a C program
+which uses one or more function:
+
+1.) The number of parameters in the actual and formal parameter lists must be consistent(same).
+2.) parameter association in C is positional ie the first actual parameter corresponds to the first formal 
+paramter, the second actual parameter corresponds to the second formal parameter and so..
+3.) Actual parameters and formal parameters must be of compatible data type.
+4.) Actual parameters may be a variable, constant or any expressions matching the type of the 
+corresponding formal parameter.
+
+NOte: 
+The values passed to a function is called as arguments.
+The parameters of the called function can be thought of as declared local variables that gets initialized
+by the value of arguments.
+
+
+#include<stdio.h>
+
+//function decalarations
+int add(int a, int b);
+int subtract(int a, int b);
+int multiply(int a, int b);
+
+void main(){
+    int x, y;
+    x = 10;
+    y = 20;
+    add(x,y);//returns a+b
+    subtract(x,y);//returns a-b
+    multiply(x,y);//returns a*b
+}
+
+//user defined function
+int add(int a, int b){
+    return a+b;
+}
+
+int subtract(int a, int b){
+    return b -a;
+    
+}
+
+int multiply(int a, int b){
+    return a*b;
+}
+
+
+5. Function decalaration( Function Prototype)
+-------------------------------------------------
+In a c program, a user-written function should normally be decalared prior to its use to allow the compiler
+to perform type checking on the arguments used in its call statements.
+
+Function decalaration consist only of a function header, it contains no code and ends with semicolon.
+
+Syntax:
+
+return-type function-name(data-type-list);
+
+There are three basic parts in this declaration:
+1) function-name: any valid identifier/variables in C.
+2) return-type: it specifies the type of data given back to the calling function by the called function after 
+it executes its specific task.
+3) data-type-list: this list specifies the data type of each of the variables, the values of which are expected
+to be transmitted by the calling function to the called function.
+
+
+6. Return statement:
+------------------------
+There are two important use of return statement:
+1) It causes immediate exit from the function that it is in. ie it causes the program execution to return
+to the calling code.
+2) It may be used to return a value.
+
+Syntax:
+return(expression);
+return;
+
+Where the expression must be evaluated to a value of the type specified in the function header for the 
+return value .

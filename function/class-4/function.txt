@@ -1,0 +1,30 @@
+Important points of functions in c language:
+1.) functions in c must be declared and defined.
+2.) functions declaration must be done before the function call which can be defined later.
+3.) The declaration of the function contains
+    a) function name.
+    b) the return type of the function.
+    c) the type and the order of the formal parameter.
+
+Note: In other word declaration of the function contains the header of the function definition with semicolon at the end.
+
+function definition which is traditionally coded after the function that make the call, contains the 
+code needed to complete the task.
+
+#include<stdio.h>
+//function declaration
+void greeting(void);
+
+//main function
+int main(void){
+    //statements
+    greeting();//call
+    return 0;
+}
+
+//defining the function
+
+void greeting(void){
+    printf("hello c");
+}
+
