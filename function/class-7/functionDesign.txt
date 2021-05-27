@@ -1,0 +1,25 @@
+Different Function Designs or Types of Functions:
+----------------------------------------------------
+
+Generally Functions are Designed on the basis of return values and their paramter lists.
+ON the basis of return values and paramter lists of a function Different types of functions are as follows:
+
+1.) Void function with no parameters. ie ( void function-name(){}).
+2.) Void function with parameters. ie  ( void function-name(int x, float y){})
+3.) Functions that return a value but have no parameters. ie  ( int function-name(){ return 0;})
+4.) Functions that return a value and have parameters. ie ( float function-name(int x, float y)( return x +y; ))
+
+//write a program using function with no parameter to print your name on the output screen.
+
+#include<stdio.h>
+void display();
+
+void main(){
+    display();
+}
+void display(){
+    printf("lingaraju nigappa");
+}
+
+//write a program to take  two int values input from the user and multiply those and show the output using functions.
+

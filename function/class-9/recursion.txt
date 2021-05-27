@@ -1,0 +1,28 @@
+Recursion:
+----------------
+Generally we have two approach to write repetitive algorithms.
+    1.) use of loops.
+    2.) use Recursion.
+
+Recursion:
+Recursion is a repetitive process in which a function calls itself.
+
+
+Recursive function:
+----------------------
+It is a function which contains call to itself.
+
+Recursive function allows us to divide a complex problems into identical single simple cases which can 
+be handled easily.
+This is also well programming technique divide and conquer algorithm.
+
+NOte:
+A Recursive function must have at least one exit condition that can be satisfied. Otherwise 
+Recursive function will call itself repeatedly until the runtime stack overflow.
+
+Implementing Recursion:
+1.) Decompose a problem into smaller problems of same type.
+2.) Recursive calls must diminish(reduce) problem size.
+3.) Necessity of base case(it is very important). it acts as a terminating condition.
+
+//Write a program to display first n numbers in a fibonacci series.

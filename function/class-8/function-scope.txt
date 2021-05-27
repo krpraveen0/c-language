@@ -1,0 +1,52 @@
+Function Scope:
+----------------------
+Scope:
+It determines the region of the program in which a definied object is visible. 
+Scope pertains to any object that can be declared, such as variables or a function declarations.
+
+In c language there are two scopes:
+ 1. Local Scope.
+ 2. Global Scope.
+
+1. Local Scope(Local Variables):
+-----------------------------------
+The variables that can be declared inside a function are called Local variables.
+Local variables are not visible outside of their own code block.
+Local variables are accessible only while the block of code in which they are declared is executed.
+The memory of the Local variables are created upon the entry into its block and destroyed upon exit.
+The same name can be given to Different local variables in Different functions or blocks of the same program 
+--------------------------------------------------------------------------------------------------------------
+Program to illustrate the properties of local variables
+
+#include<stdio.h>
+void localVar();
+//global variable
+int b = 20;
+
+void main(){
+    int a;
+    a = 15;
+    printf("%d local to main",a);
+    printf("%d local to locaVAr",b);
+    localVar();
+    
+}
+
+void localVar(){
+        //local variable of localVar function
+        // int b = 10;
+        printf("%d local to localVar",b);
+
+    }
+
+Global Variables:
+---------------------
+A variable definied outside of all functions in a c program is known as Global variable.
+
+The best and common practice is to define the global variable at the beginning of the program before any function.
+
+Global variable may, however be placed any where in the program, prior to their first use, provided
+they are defined outside of the function.
+
+//By using the local and global variable write a program in c .
+
