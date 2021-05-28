@@ -1,0 +1,42 @@
+Command line argument
+------------------------
+In C language if the main() has parameters, they are known as command-line argument.
+These command line arguments allows the user to specify additional information when program is invoked(called)
+by the compiler/system.
+
+main():
+----------
+The main() can be defined either 
+with no argument ie main() or main(void)
+with two arguments: one integer and other an array of pointers to char(strings) that represent 
+user-determined values to be passed to main().
+
+The two different formats of main() are as;
+
+1) 
+
+int main(void){
+    //local variables
+    //statements
+}
+
+2) 
+int main(int argc,char *argv[]){
+    //local variables
+
+    //statements
+
+}
+
+IN above the name of the arguments are of our choice but traditionally they are called
+argc(argument count) and argv(argument vector).
+Here the first argument(argc) defines the number of elements in the array identified in the second argument(char *argv[]).
+The value of this argument is not entered using the keyboard, but the system determines it from the 
+arguments the user types.
+
+The argv array has several elements in that the first element points to the name of the program(its filename)
+It is provided automatically by the program.
+The last element of argv[] contains NULL and may be used to identify the end of the list.
+
+The rest of the elements of argv[] contains pointers to the user-entered string values.
+
