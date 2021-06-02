@@ -1,0 +1,26 @@
+static
+------------
+static is a keyword used to define the storage class as static.
+The use of static storage class specifier makes a variable a permanent variable within a specified region.
+
+Two kinds of variables are allowed to be specified as static variable.
+    1.) static variable with block scope.
+    2.) static variable with file scope.
+
+1.) static variable with block scope:
+---------------------------------------
+    Scope : block Scope.
+    Extent(lifetime): static lifetime.
+    Linkage: Internal Linkage.
+    Storage Space: Main Memory.
+    Initial value: Zero.
+
+
+For static variable with block scope a permanent storage location is alloted in the primary Memory.
+The computer allocates the storage for this variable only once.
+
+This variable is usable within function or blocks where it is declared and preserves its previous value
+held by it between the function calls.
+
+In the case of static variable the contents of the variable will be retained throughtout the program.
+In absence of any initialization, static variables are initialized to zero.

@@ -1,0 +1,78 @@
+2.Extent/life time of a data object:
+-------------------------------------
+The duration for which memory is associated with identifier is known as extent or lifetime of a data object.
+
+The storage duration of the identifier determines its lifetime, either 
+    1) static duration(global lifetime).
+    2) automatic duration(local lifetime).
+
+Note :
+static duration:
+--------------------
+A variable with a static duration is created when the program is loaded for execution and is destroyed when the 
+execution stops.
+This is true no matter how many times the decalaration is encountered during the execution.
+
+automatic duration:
+---------------------
+An object with the automatic duration is created each time its decalaration is encountered and is
+destroyed each time its block is exited(closed).
+
+
+Linkage:
+------------
+A large application program may be broken into several modules.
+Each modules potentially written by a differnt programmers. Each module is aspirate source file
+with its own objects.
+Here differnt modules may be related when the program is link edited(compatible).
+
+Basically there are two types of Linkage:
+    1) Internal Linkage.
+    2) External Linkage.
+
+1) Internal Linkage:
+--------------------
+Internal linkage is visibile only in module. It means other modules cannot refer to this object.
+
+2) External Linkage:
+---------------------
+An object with External linkage is declared in one modules but is visibile in all other modules
+that declare it with a special keyword(extern).
+
+
+Storage Class Specifier
+--------------------------------
+To indicate where the variables would be stored,
+How long they would exist(extent/lifetime),
+What would be the region of existence(scope),
+and what would be the default values,
+
+For answering the all above questions, C language provides four storage class Specifiers that 
+can be used along with the data type Specifiers in the decalaration statement of the variable.
+
+    1.) auto
+    2.) static
+    3.) register
+    4.) extern
+
+The storage class specifier precedes the decalaration statement for a variable.
+Syntax:
+        storage-class-specifier data-type variable-name
+
+1.) auto
+-----------
+Scope: Block Scope(Local Scope)
+Extent(lifetime): automatic lifetime.
+Linkage: Internal Linkage.
+Storage Space: Main memory.
+Initial Value: Upredictable value or Garbage value.
+
+Example: all variable inside the body of a function.
+
+The keyword "auto" is used in the decalaration of a variable to explicitly specify its storage class.
+
+An auto variable can be initialized where it is defined or left uninitialized.
+If it is initialized, it receives the same initialization value each time it is created.
+if it is not initialized, its value will be undefined every time it is born.
+When auto variable is not initialized, its value is unpredicatable.
+

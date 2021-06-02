@@ -1,0 +1,12 @@
+register:
+---------------
+    Scope: Block Scope (Local Scope).
+    Extent(lifetime):Automatic lifetime.
+    Linkage : Internal Linkage.
+    Storage Space: CPU register.
+    Initial Value : Unpredictable or garbage value.
+
+What is register?
+it is a keyword used to declare register variables.
+A register storage class is the same as the auto class with only one difference of storage space.
+Memory lcoations in Microprocessors chip are known as registers.

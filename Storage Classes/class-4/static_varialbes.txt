@@ -1,0 +1,15 @@
+Static variable with file scope:
+---------------------------------
+    scope: File Scope.
+    Extent(lifetime): Static lifetime.
+    Linkage: Internal Linkage.
+    Storage Space: Main Memory .
+    Initial Value: Zero.
+
+Note:
+Static variables with file scope are declared like global variables with the keyword static preceding 
+its declaration statement.
+
+These static variables are accessed by all functions in the program file where these variables exists and are declared.
+
+
