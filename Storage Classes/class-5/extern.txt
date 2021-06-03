@@ -1,0 +1,27 @@
+extern
+-------
+    scope: File Scope.
+    Extent(lifetime): Static lifetime
+    Linkage : external Linkage.
+    Storage Space: Primary Memory(RAM)
+    Initial value: Zero.
+
+
+Sometimes program may be very large in syntax which can be broken up into smaller programs
+After compiling these each program file can be joined together to form the large program.
+
+These small program modules that combine together may need some variable that can be used by all of them.
+
+In c such a provision can be made by specifying these variables, accessible to all the small program modulesas accessible
+as an external storage class variable(extern keyword).
+
+these variables are global to all the small program modules that are formed as separate files.
+the keyword for declaring such global variables is extern.
+
+Such global variables are declared like any other variable in one of the program modules while the declaration
+of these variables are preceded with the keyword extern in all other combining program modules.
+
+The program modules may also be functions or blocks.
+
+
+

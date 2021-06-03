@@ -1,0 +1,23 @@
+register
+--------------
+Scope: Block Scope(Local Scope)
+Extent(lifetime): Automatic lifetime.
+Linkage: Internal Linkage
+Storage Space: CPU registers
+Initial Value: Unpredictable value or garbage value.
+
+register is a keyword, used to decalre register variables.
+register Storage class is same as auto class with only difference of storage space.
+Memory locations on the microprocessor chip are known as register.
+
+Storage and retrieval of data from a register can be done by a program much faster.
+
+The normal place of storing the value of a variable is the main memory (RAM).but the storage specifier register 
+qualifies a variable, so that the contents of the variables defined is stored in one of the register of the CPU.
+
+Register storage can be specified only to local variables not to global variables.
+
+Register variables are ideal for use where there is a repeated use of that variables such as loop.
+
+If there are not enough registers available, then the c compiler will automatically ignore the register data type
+and it keeps them in the main memory.
