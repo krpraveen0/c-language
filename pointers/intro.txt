@@ -1,0 +1,89 @@
+Pointers 
+--------------
+1.) Understanding Memory Address.
+2.) pointer OPerators.
+3.) Pointer.
+4.) Decalaration of Pointer Variables.
+5.) Initialization of Pointer Variables.
+6.) Dereferencing/Redirecting Pointer Variables.
+7.) Decalaration versus Redirection.
+8.) Void Pointer.
+9.) Null Pointer.
+10.) Passing 1D array to Function.
+11.) passing 2D array to Function.
+12.) Passing Strings to Function.
+13.) Parameter Passing Techniques.
+14.) Functions returning pointers.
+15.) Compatibility.
+16.) Pointer Airthmetic(Operations on Pointer.).
+17.) Pointers and One-Dimensional Arrays.
+18.) Pointers and two-Dimensional Arrays.
+19.) Passing an array to a Function.
+20.) Memory Allocation Functions.
+21.) Pointer to Function.
+22.) Pointers and Strings.
+
+1.) Understanding Memory Address.
+------------------------------------
+The memory of a computer is made up of bytes arranged in a sequential manner.
+Each byte has an index number, which is called as address of that byte.
+So the address of these bytes starts from zero and the address last byte is one less than the size of the memory.
+It is very necessary to declare a Variable before using it,since compiler has to reserve space for it.
+For example:
+        int  num = 2;
+    
+In the above statement is executed in a c program, the following tasks are done by the compiler:
+1.) Allocates a memory location.
+2.) The name 'num' assigned to the allocated memory location.
+3.) The value 2 is stored into the memory.
+
+memory layout of the memory elements of a C program:
+---------------------------------------------------------
+
+memory section name                                                                    Description
+
+1.) Text(or the code segment)        This is the area of memory that contains the machine instructions
+                                     corresponding to the compiled program.
+                                     this area is READ ONLY and shared by a multiple instaces of running program.
+                                
+2.) Data                             This area in the memory image of a running program contains storage for
+                                     initialized global variables.
+                                     this area is separate for Each running instances of program.
+
+3.) BSS                              This is the memory area that contains storage for uninitialized global variables.
+                                     It is also separate for each running instaces of a program.
+
+4.) Stack                            This memory area contains storage for automatic (local) variables in the program.
+                                     It also stores context-specific information before a Function call.
+                                     e.g the value of the instruction pointer(program counter) registers before a Function
+                                     call is made.
+
+5.) Heap                             This memory region is reserved for dynamically allocating memory for 
+                                     variables at run-time.
+                                     Dynamic memory allocation is done by using the malloc and calloc functions.
+
+6.) Shared libraries                 This region contains the executable image of shared libraries being used by the program.
+
+
+
+2.) pointer OPerators:
+---------------------
+There are two pointer operator:
+    i) Address of operator(&).
+    ii) Value at Address operator(*).
+
+i) Address of operator(&):
+-------------------------------
+It returns the address of the memory location alloted to a specified variable.
+
+Syntax: & variable-name
+example : &num // this gives the address of the memory location of variable num 
+
+ii) Value at Address operator(*):
+------------------------------------
+It returns the value stored inside the memory location at the specified address.
+It is also called as 'indirection' operator.
+
+Syntax:  * MemoryLocation-address
+example: *(&num).
+

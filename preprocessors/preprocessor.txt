@@ -1,0 +1,23 @@
+Predefined Macros
+----------------------
+C language provides several predefined macros.
+----------------------------------------------
+    1.) __DATE__ --> It provides a String constant in the form of "mmm dd yyyy" containing the date of the translation.
+    2.) __FILE__ --> It provides a string constant containing the name of the source file.
+    3.) __LINE__ --> It provides an integer constant containing the current statement number in the source file.
+    4.) __TIME__ --> It provides a string constant in the form "hh:mm:ss" containing the time of the translations.
+
+
+Undefining macros (#undef):
+-----------------------------
+Once we define a macro then it is not possible to redefine it again if we try to do so we get compilation
+error.
+But it is possible to redefine a macro by ensuring to undefine the already defined macro, using the
+#undef commmand.
+
+example:
+    Syntax: #undef macro-name.
+
+    #define G 10
+    #undef G
+    #define G 9.8
