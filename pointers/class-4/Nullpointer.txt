@@ -1,0 +1,20 @@
+A null pointer is a special pointer value that points nowhere.
+The most straight forward way to get a null pointer in the program is by using the predefined constant NULL,
+which is defined by serveral header libraries of C such as stdio.h, stdlib.h, string.h etc.
+
+Initializing a pointer to NULL:
+----------------------------------------------
+int* ip = NULL;
+
+or 
+int* ip = 0;
+
+
+HW:
+-------
+write a program to add, subtract, multiply, divide two numbers given by the user.
+condition:
+subtract:
+ check which number is bigger, then subtract smaller number from bigger number.
+division :
+ check which number is bigger then divide bigger number  number from smaller number.

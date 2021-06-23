@@ -1,0 +1,10 @@
+Pointers defined to be of specific data type cannot hold the address of any other type of variable.
+The pointers which doesn't have any data type associated with them ie can contain the address of 
+any type of variable(int,char,float etc). is known as Void pointer.
+
+Pointers to Void cannot be directly dereferenced like other pointer variables by using the indirection operator(*).
+It must be suitably typecast to the required data type.
+How we can type cast a void pointer?
+A void pointer may be typecasted by preceding its name with relevant data type followed by an asterisk,
+both of which must be enclosed within a pair of paranthesis.
+

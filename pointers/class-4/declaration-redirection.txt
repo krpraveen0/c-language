@@ -1,0 +1,3 @@
+In pointer we have used asterisk operator in two different contexts:
+    1) for declaration of pointer variable ( int* p) ie astrisk is associated with the data type.
+    2) redirection. ie asterisk is associated with the variable name. (*pa)
