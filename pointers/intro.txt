@@ -87,3 +87,63 @@ It is also called as 'indirection' operator.
 Syntax:  * MemoryLocation-address
 example: *(&num).
 
+
+3.) Pointer.
+------------------
+A pointer is a variable which holds the memory address of another variable.
+
+NOte: If one variable contains the address of another variable, then the first variable is said to point
+to the second 
+
+advantages:
+-----------------
+1.) Use of pointers in C program makes it more efficient and compact.
+
+Some of the important uses of pointers are:
+--------------------------------------------
+1.) Accessing array elements.
+2.) returning more than one value from a function by passing argument to the functions using call by address.
+3.) Passing array and strings to functions.
+4.) implementing the data structures like linked list, tree, graph etc.
+5.) Obtaining memory form the system dynamically.
+6.) Pointer can improve the efficiency of certain routines.
+
+
+Note: The pointer are one of the most important and strongest topic/concept in c language but 
+also it is the most dangerous feature in C.
+1.) uninitialized pointers(or pointers containing invalid values) can cause our system to crash.
+2.) perhaps worse, it is easy to use pointers incorrectly, casing bugs that are very difficult to find.
+
+Decalaration of Pointer Variables:
+------------------------------------------
+Syntax:
+        datatype  * pointer-variable;
+    where pointer-variable is the name of pointer only.
+    example:
+            int *ptr;
+            float *fptr;
+            char *cptr;
+
+In above line ptr is a pointer that should point to variable of type int, 
+
+All pointers irrespecive of there base type will occupy same space in the memory since all of them contains address only.
+Generally 2 bytes of memory is used to store an address.
+
+
+5.) Initialization of Pointer Variables.
+-----------------------------------------------
+C program does not initializes variables. 
+so as we start our program all the uninitialized variables have unknown grabage value. As 
+pointer is also a variable the same applies for it.
+
+To avoid any uninitialized pointer errors we should initialize our pointers just after its decalaration.
+
+syntax:
+decalaration:
+        data-type *variable-name ;
+
+decalaration & Initialization :
+        data-type *variable-name = address-of-other-variable;
+        
+
+

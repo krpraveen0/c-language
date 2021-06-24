@@ -1,0 +1,26 @@
+In a large program to process the arrays we should be able to pass those arrays to functions.
+In that process we can pass 1D array to functions in two ways:
+    1.) passing individual element.
+    2.) passing whole array at a time.
+
+1.) passing individual element.
+-----------------------------------
+    a) passing data values:
+    -----------------------
+    We can pass data values(that is individual array elements) just like we pass any data value.
+    As long as the array element type matches the functions parameter type, it can be passed.
+    The called function cannot tell wether the value it receives comes from an array, variable or an expressions.
+
+    b) Passing Address:
+    ----------------
+    To pass an array elements address, we prefix the address operator to the element indexed reference.
+
+    eg: To pass the address of arr[3], we use &arr[3].
+
+    note: passing an address of an array element requires two chnages in the called function.
+    First change:  
+                1.) it must declare that it is receiving an address.
+                2.) it must use the indirection operator(*)
+
+Q. Write a program to reverse an input string given by the user.
+Q. Write a program to check if the given string is palindrome or not. (eg: eye, malyalam etc)
