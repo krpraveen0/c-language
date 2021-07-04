@@ -1,0 +1,49 @@
+use of memory in computer system:
+------------------------------------
+Conceptually memory in computer system is divided into
+    1.) program memory.
+    2.) data memory.
+
+1. Program memory:
+----------------------
+It consists of the memory used for main function and all called(all functions which are called inside main function) function.
+main function must be in memory at all the times.
+Beyond main function, each called function must be in memory only while it or any of its called function is active.
+
+Practically most systems keeps all functions in memory while the program in running.
+ 
+2. Data Memory:
+--------------------
+It consists of permanent definitions, such as global data and constants, local decalarations and dynamic data memory.
+
+Note:
+the program code for a function may be in memory at all times, the local variables for the function are available only when 
+it is active.
+
+Stack memory
+----------------
+More than one version of the function can be active at a time. IN this case, multiple copies of the local variables are allocated
+although only one copy of function is present. The memory facility of these capabilities is known as the stack memory.
+
+Heap memory:
+------------
+It is unused memory allocated to the program and available to be assigned during the execution.It is the memory pool from which memory 
+is allocated when requested by the memory allocation functions.
+
+
+Dynamic Memory Location:
+-------------------------
+C compiler provides us two ways to reserve Memory Location for an object:
+    1.) static allocation
+    2.) Dynamic allocation.
+
+ 1.) static allocation:
+ -------------------------
+ In static memory allocation , requires the decalarations and definitions of memory to be fully specified in the source code. ie
+ The number of bytes reserved cannot be changed during run time.
+ Till now we have used this technique only to define variables, arrays, pointers etc.
+
+ 2.) Dynamic  allocation:
+ -------------------------
+ it uses predefined functions to allocate and release memory for data while the program is running.
+ Dynamic memory allocation effectively postpone the memory data definition, but not data decalarations
