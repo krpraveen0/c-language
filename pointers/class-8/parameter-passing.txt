@@ -1,0 +1,32 @@
+Parameter Passing technique:
+---------------------------------
+calling function -- > the function in which we call some other functions is known as calling function.
+called function --> The function which is called inside another function is known as called function.
+
+Paramter passing is a mechanism for communication of data and information between the calling function
+and the called function.
+C supports following types of parameter passing schemes:
+1. Call by Value.
+2. Call by address.
+
+1. Call by Value:
+-------------------
+When the arguments are passed by value, the actual arguments in the calling function are 
+copied into corresponding formal arguments of the called function.
+In this way of parameter passing if we make any changes in the formal parameter of called function, then 
+it will not effect on the values of actual arguments in calling function.
+
+1. Call by address:
+-------------------
+When the arguments are passed by address, the address of the actual arguments in the calling function are copied
+into formal arguments of the called function.
+In this technique changes made to the formal arguments of the called function have effect on the values of 
+the actual arguments in the calling function.
+In this method we use pointer concept.
+IN this technique of parmater passing the formal parameters must be declared as pointers.
+
+
+
+//write a program to store address of a variable and change its value by using the concept of pointer.
+//write a program which stores address of two variables and store those variables and perform addtion 
+if first number is greater than the second number otherwise perform substraction.
