@@ -1,0 +1,31 @@
+Static Memory Allocation
+--------------------------
+For static Memory allocation we should ensure that the declaration and definition of Memory to be used is fully specified in the 
+source program.
+Which means number of bytes reserved cannot be changed during the run time.
+Till now we have using static Memory allocation only.
+
+Dynamic memory allocation
+----------------------------
+In dynamic memory allocation we use predefined functions to allocate and release memory for data while the 
+program is running.
+It effectively postpones the data declaration, to run time.
+
+Memory Allocation functions:
+----------------------------------
+Majorly in C there are four memory management functions are used with dynamic memory.
+1. malloc()
+2. calloc()
+3. realloc()
+4. free()
+
+The first three functions(malloc, calloc & realloc) are used for memory allocation.
+The last function (free()) is used to return the memory when it is no longer needed.
+All those memory management functions are found in the standard library file(stdlib.h).
+
+1. malloc() [block memory allocation]:
+----------------
+The malloc() function allocates a block of memory that contains the number of bytes specified in its
+parameter.
+It returns a void pointer to the first byte of the allocated memory.
+The allocated memory is not initialized. 
