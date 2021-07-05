@@ -1,0 +1,7 @@
+Functions returning Pointers:
+------------------------------------
+
+Some function returns a pointer also.
+when a pointer is returned from a function, it must point to data in the calling function or in the global variable.
+let us consider a program in which a pointer would point an integer variable, whichever will be larger between 
+two variables through a function which returns the address of the larger variable.
