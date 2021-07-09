@@ -23,9 +23,3 @@ The first three functions(malloc, calloc & realloc) are used for memory allocati
 The last function (free()) is used to return the memory when it is no longer needed.
 All those memory management functions are found in the standard library file(stdlib.h).
 
-1. malloc() [block memory allocation]:
-----------------
-The malloc() function allocates a block of memory that contains the number of bytes specified in its
-parameter.
-It returns a void pointer to the first byte of the allocated memory.
-The allocated memory is not initialized. 

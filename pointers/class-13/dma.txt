@@ -1,0 +1,49 @@
+1. malloc() [block memory allocation]:
+----------------
+The malloc() function allocates a block of memory that contains the number of bytes specified in its
+parameter.
+It returns a void pointer to the first byte of the allocated memory.
+The allocated memory is not initialized. 
+Syntax:
+    void *malloc(size_t size)
+
+Where the type, size_t is define in several header files including stdio.h.
+The type(size_t) usually an unsigned integer and by the standard it is guaranteed to be large enough to hold
+the maximum address of the computer.
+
+To provide portability, the size specification in malloc() actually parameter is generally computed using the sizeof()
+operator.
+For example:
+if we want to allocate an integer in the heap, we code the call as
+ pint = malloc(sizeof(int));
+
+As we know that the malloc() retuns the address of the first byte in the memory space allocated.
+if it is not successful, malloc() returns null pointer.
+
+an attempt to allocate memory from the heap when memory is insufficient is known as overflow.
+It it up to the program to check memory overflow.
+
+NOte: if we call malloc() with 0 size, the result are unpredictable.
+It may return NULL pointer, or it may return some other implementation dependent value.
+So we should never call malloc() with a size zero.
+
+eg:
+
+if(!(pInt = malloc(sizeof(int)))){
+    //no memory is available
+    exit();
+}
+
+calloc[Contiguous memory allocation]:
+----------------------------------------
+This calloc() [memory allocation  function] is primarily used to allocate memory for arrays.
+
+Syntax:
+    void *calloc(size_t element-count,size_t element_size)
+eg:
+
+if(!(ptr = (int*) calloc(200,sizeof(int))))
+    //no memory available
+    exit(100);
+//memory available
+------

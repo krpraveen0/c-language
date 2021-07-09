@@ -1,0 +1,23 @@
+Memory allocation functions:
+-------------------------------
+3. Reallocation of Memory(realloc()):
+-------------------------------------------
+the realloc() function can be highly inefficient and therefore should be used advisedly.
+When given a pointer to a previously allocated block of memory, realloc() changes the size 
+of the block by deleting or extending the memory at the end of the block.
+If the memory cannot be extended because of other allocations, realloc() allocates a complexly 
+new block, copies the existing memory allocation to the new allocation and deletes the old allocation.
+eg :
+
+
+4. Releasing Memory (free()):
+----------------------------
+when memory locations allocated by malloc() ,calloc() and realloc() are no longer needed, 
+then they should be freed using the predefined function free().
+
+Syntax:
+    void free(void *ptr);
+
+Note: 
+1. Using a pointer after its memory has been realised is a common programming error.
+2. The pointer used to free memory must be of the same type as the pointer used to allocate the memory.
